@@ -5,63 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Agregar_Tickets">
-
-    <EditText
-        android:id="@+id/txtDescripcion"
-        android:layout_width="317dp"
-        android:layout_height="113dp"
-        android:ems="10"
-        android:hint="Descripción"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
-
-    <EditText
-        android:id="@+id/txtAutor"
-        android:layout_width="316dp"
-        android:layout_height="52dp"
-        android:ems="10"
-        android:hint="Autor"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
-
-    <EditText
-        android:id="@+id/txtEstado"
-        android:layout_width="315dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:hint="Estado"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
-
-    <EditText
-        android:id="@+id/txtCreacion"
-        android:layout_width="315dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:hint="Fecha de creación"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+    tools:context=".detalleTicket">
 
     <EditText
         android:id="@+id/txtFinalizacion"
@@ -92,6 +36,48 @@
         app:layout_constraintVertical_bias="0.521" />
 
     <EditText
+        android:id="@+id/txtEstado"
+        android:layout_width="315dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="Estado"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="317dp"
+        android:layout_height="113dp"
+        android:ems="10"
+        android:hint="Descripción"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <EditText
+        android:id="@+id/txtAutor"
+        android:layout_width="316dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Autor"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <EditText
         android:id="@+id/txtNombreTic"
         android:layout_width="318dp"
         android:layout_height="54dp"
@@ -105,4 +91,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.128" />
 
+    <EditText
+        android:id="@+id/txtCreacion"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Fecha de creación"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
 </androidx.constraintlayout.widget.ConstraintLayout>
