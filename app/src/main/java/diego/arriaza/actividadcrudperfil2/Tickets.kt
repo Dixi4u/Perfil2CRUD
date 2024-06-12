@@ -4,8 +4,6 @@ import RecyclerViewHelper.Adaptador
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -25,18 +23,18 @@ class Tickets : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_tickets)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.txtTicketCard)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.constraint)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtNombret = findViewById<EditText>(R.id.txtNombreTic)
-        val txtDescripcion = findViewById<EditText>(R.id.txtDescripcion)
-        val txtAutor = findViewById<EditText>(R.id.txtAutor)
-        val txtEmail = findViewById<EditText>(R.id.txtEmail)
-        val txtCreacion = findViewById<EditText>(R.id.txtCreacion)
-        val txtEstado = findViewById<EditText>(R.id.txtEstado)
-        val txtFinalizacion = findViewById<EditText>(R.id.txtFinalizacion)
+        val txtNombret = findViewById<EditText>(R.id.txtNombreDet)
+        val txtDescripcion = findViewById<EditText>(R.id.txtDescripcionDet)
+        val txtAutor = findViewById<EditText>(R.id.txtAutorDet)
+        val txtEmail = findViewById<EditText>(R.id.txtEmailDet)
+        val txtCreacion = findViewById<EditText>(R.id.txtCreacionDet)
+        val txtEstado = findViewById<EditText>(R.id.txtEstadoDet)
+        val txtFinalizacion = findViewById<EditText>(R.id.txtFInalizacionDet)
         val btnAgregar = findViewById<Button>(R.id.btnAgregar)
         val rcvTickets = findViewById<RecyclerView>(R.id.rcvTicket)
 
@@ -60,10 +58,10 @@ class Tickets : AppCompatActivity() {
                 val Email = resulSet.getString("Email")
                 val Creacion = resulSet.getString("Fecha_Creacion")
                 val Estado = resulSet.getString("Estado")
-                val Finalizacion = resulSet.getString("Fecha_Finalizacion")
+                val Finalizacion = resulSet.getString("Fecha_FInalizacion")
 
-                val ticket = dataClassTicket(uuid, Titulo, Descripcion, Autor, Email, Creacion, Estado, Finalizacion)
-                ticket.add(ticket)
+                val tickets = dataClassTicket(uuid, Titulo, Descripcion, Autor, Email, Creacion, Estado, Finalizacion)
+                ticket.add(tickets)
             }
             return ticket
         }
@@ -80,7 +78,7 @@ class Tickets : AppCompatActivity() {
             CoroutineScope(Dispatchers.IO).launch{
                 val objConexion = ClaseConexion().cadenaConexion()
 
-                val addTicket = objConexion?.prepareStatement("insert into Ticket(UUID_Ticket,Titulo,Descripcion,Autor,Email,Fecha_Creacion,Estado,Fecha_Finalizacion) values(?, ?, ?, ?, ?, ?, ?, ?)")
+                val addTicket = objConexion?.prepareStatement("insert into Ticket(UUID_Ticket,Titulo,Descripcion,Autor,Email,Fecha_Creacion,Estado,Fecha_FInalizacion) values(?, ?, ?, ?, ?, ?, ?, ?)")
                 addTicket?.setString(1, UUID.randomUUID().toString())
                 addTicket?.setString(2, txtNombret.text.toString())
                 addTicket?.setString(3, txtDescripcion.text.toString())

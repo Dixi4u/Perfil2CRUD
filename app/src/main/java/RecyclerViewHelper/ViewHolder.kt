@@ -7,5 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import diego.arriaza.actividadcrudperfil2.R
 
 class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-    val textView: TextView = view.findViewById(R.id.txtTicketCard)
+
+    val txtTicketsCard: TextView = view.findViewById(R.id.txtTicketsCard)
+    val imgEditar: ImageView = view.findViewById(R.id.imgEditar)
+    val imgBorrar: ImageView = view.findViewById(R.id.imgEliminar)
 }

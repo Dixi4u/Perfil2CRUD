@@ -1,12 +1,14 @@
 package modelo
 
-class dataClassTicket {
-    val UUID_Ticket: String,
-    val Titulo: String,
-    val Descripcion: String,
-    val Autor : String,
-    val Email: String,
-    val Fecha_Creacion: String,
-    val Estado: String,
-    val Fecha_FInalizacion: String
-}
+class dataClassTicket(
+    uuid: String,
+    Titulo: String,
+    Descripcion: String,
+    Autor: String,
+    Email: String,
+    Creacion: String,
+    Estado: String,
+    Finalizacion: String
+
+
+)

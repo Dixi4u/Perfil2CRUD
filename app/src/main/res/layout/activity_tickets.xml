@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/txtTicketCard"
+    android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Tickets">
@@ -18,7 +18,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/txtFinalizacion"
+        android:id="@+id/txtFInalizacionDet"
         android:layout_width="208dp"
         android:layout_height="58dp"
         android:ems="10"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.473" />
 
     <EditText
-        android:id="@+id/txtEstado"
+        android:id="@+id/txtEstadoDet"
         android:layout_width="315dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.574" />
 
     <EditText
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/txtDescripcionDet"
         android:layout_width="317dp"
         android:layout_height="113dp"
         android:ems="10"
@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.135" />
 
     <EditText
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtEmailDet"
         android:layout_width="316dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.396" />
 
     <EditText
-        android:id="@+id/txtNombreTic"
+        android:id="@+id/txtNombreDet"
         android:layout_width="318dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.029" />
 
     <EditText
-        android:id="@+id/txtAutor"
+        android:id="@+id/txtAutorDet"
         android:layout_width="316dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -102,7 +102,7 @@
         app:layout_constraintVertical_bias="0.309" />
 
     <EditText
-        android:id="@+id/txtCreacion"
+        android:id="@+id/txtCreacionDet"
         android:layout_width="184dp"
         android:layout_height="57dp"
         android:ems="10"

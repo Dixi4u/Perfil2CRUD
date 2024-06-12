@@ -8,11 +8,11 @@
     tools:context=".detalleTicket">
 
     <EditText
-        android:id="@+id/txtFinalizacion"
+        android:id="@+id/txtFInalizacionDet"
         android:layout_width="317dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:hint="Fecha de creación"
+        android:hint="Fecha de Finalización"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.841" />
 
     <EditText
-        android:id="@+id/txtEmail"
+        android:id="@+id/txtEmailDet"
         android:layout_width="316dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.521" />
 
     <EditText
-        android:id="@+id/txtEstado"
+        android:id="@+id/txtEstadoDet"
         android:layout_width="315dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -50,7 +50,7 @@
         app:layout_constraintVertical_bias="0.731" />
 
     <EditText
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/txtDescripcionDet"
         android:layout_width="317dp"
         android:layout_height="113dp"
         android:ems="10"
@@ -64,7 +64,7 @@
         app:layout_constraintVertical_bias="0.256" />
 
     <EditText
-        android:id="@+id/txtAutor"
+        android:id="@+id/txtAutorDet"
         android:layout_width="316dp"
         android:layout_height="52dp"
         android:ems="10"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.427" />
 
     <EditText
-        android:id="@+id/txtNombreTic"
+        android:id="@+id/txtNombreDet"
         android:layout_width="318dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -92,7 +92,7 @@
         app:layout_constraintVertical_bias="0.128" />
 
     <EditText
-        android:id="@+id/txtCreacion"
+        android:id="@+id/txtCreacionDet"
         android:layout_width="315dp"
         android:layout_height="48dp"
         android:ems="10"
@@ -104,4 +104,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.623" />
+
+    <EditText
+        android:id="@+id/txtUUIDdet"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="UUID"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

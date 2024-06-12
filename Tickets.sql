@@ -7,6 +7,7 @@ Contrasena VARCHAR2(50)
 
 CREATE TABLE Ticket(
 UUID_ticket VARCHAR2(50),
+Titulo VARCHAR2(50),
 Descripcion VARCHAR2(250),
 Autor VARCHAR2(50),
 Email VARCHAR2(50),
