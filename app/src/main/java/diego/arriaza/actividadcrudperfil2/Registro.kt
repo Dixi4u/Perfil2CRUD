@@ -38,14 +38,14 @@ class Registro : AppCompatActivity() {
                 val objConexion = ClaseConexion().cadenaConexion()
 
                 val crearUsuario =
-                    objConexion?.prepareStatement("Insert into tbUsuarios (UUID_usuario, nombre, correo, contrasena) values (?,?,?,?)")!!
+                    objConexion?.prepareStatement("Insert into tbUsuarios (UUID_usuario, Nombre, Correo, Contrasena) values (?, ?, ?, ?)")!!
                 crearUsuario.setString(1, UUID.randomUUID().toString())
                 crearUsuario.setString(2, txtNombre.text.toString())
                 crearUsuario.setString(3, txtCorreo.text.toString())
                 crearUsuario.setString(4, txtContrasena.text.toString())
                 crearUsuario.executeUpdate()
-                withContext(Dispatchers.Main){
-                    Toast.makeText(this@Registro, "Usuario registrado", Toast.LENGTH_SHORT).show()
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@Registro, "Usuario creado", Toast.LENGTH_SHORT).show()
                     txtNombre.setText("")
                     txtCorreo.setText("")
                     txtContrasena.setText("")

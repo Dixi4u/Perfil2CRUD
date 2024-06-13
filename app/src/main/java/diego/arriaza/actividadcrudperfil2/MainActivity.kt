@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             GlobalScope.launch(Dispatchers.IO) {
                 val objConexion = ClaseConexion().cadenaConexion()
 
-                val comprobarUsuario = objConexion?.prepareStatement("SELECT * FROM tbUsuarios WHERE correo = ? AND contrasena = ?")!!
+                val comprobarUsuario = objConexion?.prepareStatement("SELECT * FROM tbUsuarios WHERE Correo = ? AND Contrasena = ?")!!
                 comprobarUsuario.setString(1, txtCorreo.text.toString())
                 comprobarUsuario.setString(2, txtContrasena.text.toString())
                 val resultado = comprobarUsuario.executeQuery()

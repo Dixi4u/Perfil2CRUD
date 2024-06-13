@@ -1,14 +1,15 @@
 package modelo
 
-class dataClassTicket(
-    uuid: String,
-    Titulo: String,
-    Descripcion: String,
-    Autor: String,
-    Email: String,
-    Creacion: String,
-    Estado: String,
-    Finalizacion: String
+import java.util.UUID
 
+data class dataClassTicket(
+    val uuid: String,
+    var Titulo: String,
+    val Descripcion: String,
+    val Autor: String,
+    val Email: String,
+    val Creacion: String,
+    val Estado: String,
+    val Finalizacion: String
 
 )

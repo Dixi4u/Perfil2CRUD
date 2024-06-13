@@ -56,7 +56,7 @@ class Adaptador(var Datos: List<dataClassTicket>) : RecyclerView.Adapter<ViewHol
 
 
     //////////////////////TODO: Editar datos
-    fun actualizarDato(nuevoTitulo: String, UUID_Ticket: Int){
+    fun actualizarDato(nuevoTitulo: String, UUID_Ticket: String){
         GlobalScope.launch(Dispatchers.IO){
 
             //1- Creo un objeto de la clase de conexion
@@ -139,7 +139,7 @@ class Adaptador(var Datos: List<dataClassTicket>) : RecyclerView.Adapter<ViewHol
         }
 
         //Todo: icono de editar
-        holder.imteditar.setOnClickListener {
+        holder.imgEditar.setOnClickListener {
 
             val context = holder.itemView.context
 
