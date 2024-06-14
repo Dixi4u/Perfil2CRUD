@@ -11,16 +11,19 @@
         android:id="@+id/imageView2"
         android:layout_width="387dp"
         android:layout_height="355dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fondoeleccion"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="499dp" />
+        tools:layout_editor_absoluteY="549dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="406dp"
         android:layout_height="294dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fondon"
-        tools:layout_editor_absoluteX="2dp"
         tools:layout_editor_absoluteY="-147dp" />
 
     <EditText
